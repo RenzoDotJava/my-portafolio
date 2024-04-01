@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+p::selection,
+span::selection,
+strong::selection,
+li::selection,
+button::selection,
+label::selection,
+a::selection,
+img::selection {
+  background-color: red;
+}
+
+header {
+  transition: all 0.5s ease-in-out;
+}
+
+svg.active {
+  transform: rotate(180deg);
+}
+
+/* div.accordion {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.5s cubic-bezier(.2, 0, .3, 1);
+}
+
+div.accordion.active {
+  max-height: 1000px;
+} */
