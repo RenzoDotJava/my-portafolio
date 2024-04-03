@@ -15,7 +15,7 @@ const icons = [
         If you are looking for someone specialized in developing <strong>websites</strong>, <strong>mobile
           apps</strong>, and <strong>design systems</strong>, you are in the right place!
       </p>
-      <p class="mt-2 md:mt-3 text-md md:text-lg">Contact me at <strong>renzogbo24@gmail.com</strong></p>
+      <p class="mt-2 md:mt-3 text-md md:text-lg">Contact me at <strong>contact@rgbo.me</strong></p>
     </div>
     <div class="flex gap-5 md:gap-8">
       <Icon v-for="icon in icons" class="h-8 w-8 cursor-pointer" :name="icon" color="black" />

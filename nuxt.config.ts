@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
+    /* '@nuxt/image', */
     ['@nuxtjs/google-fonts', {
       families: {
         Inter: [300, 400, 500, 600, 700],

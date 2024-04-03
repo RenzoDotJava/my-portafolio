@@ -7,7 +7,7 @@ const jobs = [
     endDate: 'Present',
     milestones: [
       'Build a high-quality design system for Cementos Pacasmayo that covers different digital products (PacasPro, Ayu, Isicom and Cantera)',
-      'Develop 25 responsive web components with Angular, Stencil.js, SCSS and design tokens, while working hand-in-hand with designers to guarantee the correct implementation of each component.',
+      'Develop 25 responsive web components with Angular, Stencil.js, SCSS and design tokens, while working hand-in-hand with designers to guarantee the correct implementation of each component',
       'Set up 2 pipelines to automate the upload of 3 different packages using Azure Devops',
       'Built a custom Storybook to showcase the components and their different variants, which helped the stakeholders to have a better understanding of the components and their usage'
     ],
@@ -22,7 +22,7 @@ const jobs = [
       'Worked on a migration from an Angular system to a React Native app called Runner App built with Expo and published on the Play Store and App Store',
       'Built a push notification microservice using Firebase Cloud Messaging',
       'Reworked of auth0-inspired authentication service in order to centralize the login for all the projects and let the customers to enter the system with Google and Apple accounts',
-      'Maintained 5 different Wargos projects, which were developed with React, Next.js and Angular',
+      'Maintained 5 different enterprise projects, which were developed with React, Next.js and Angular',
     ],
     link: 'https://wgt.pe/'
   },
@@ -32,8 +32,8 @@ const jobs = [
     startDate: 'July 2021',
     endDate: 'Dec 2021',
     milestones: [
-      'Maintained a billing system for G4S Peru, which was developed with JQuery, JavaScript and Django',
-      'Built a course manager website for the Peruvian Society of Hematology, which was developed with Angular and Java Spring Boot',
+      'Maintained a billing enterprise system for G4S Peru, which was developed with JQuery, JavaScript and Django',
+      'Built a course manager web for the Peruvian Society of Hematology, which was developed with Angular and Java Spring Boot',
       'Implemented endpoints and stored prodecures to improve server efficiency and reduce the response time of the different systems',
     ],
     link: 'https://mvcpartners.pe/'
@@ -50,21 +50,21 @@ function setActive(index: number) {
 </script>
 <template>
   <section id="work" class="flex flex-col py-14 xl:py-24 xl:mx-32">
-    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center">Companies I've worked at</h1>
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center">Companies I've been in</h1>
     <div class="flex flex-col mt-8 md:mt-12 xl:mt-16 sm:px-14 md:px-20 lg:px-36 xl:px-24 2xl:px-44">
       <div v-for="(job, index) in jobs" :key="index" class="flex flex-col border-b-2 ">
         <div class="flex justify-between cursor-pointer py-5" @click="() => setActive(index)">
           <div class="flex flex-col gap-1">
             <div class="flex gap-1 sm:gap-2">
-              <h2 class="text-md sm:text-lg md:text-xl font-medium">{{ job.position }}</h2>
+              <h2 class="text-lg md:text-xl font-medium">{{ job.position }}</h2>
               <span>·</span>
-              <a class="text-md sm:text-lg md:text-xl font-medium" @click="(e) => e.stopPropagation()" :href="job.link"
+              <a class="text-lg md:text-xl font-medium" @click="(e) => e.stopPropagation()" :href="job.link"
                 target="_blank" rel="noopener noreferrer">
                 <span class="hover:underline">{{ job.company }}</span>
                 <Icon name="mdi:launch" class="h-3 w-3 ms-1" />
               </a>
             </div>
-            <span class="text-sm md:text-base">{{ job.startDate }} - {{ job.endDate }} </span>
+            <span class="text-sm md:text-base text-slate-500 font-medium">{{ job.startDate }} - {{ job.endDate }} </span>
           </div>
           <Icon name="mdi:chevron-down" :class="['h-8 w-8 transition-all', active === index ? 'active' : '']" />
         </div>

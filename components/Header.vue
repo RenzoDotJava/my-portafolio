@@ -1,6 +1,6 @@
 <template>
   <header class="flex justify-between items-center h-[80px] px-7 md:px-9 lg:px-12 absolute w-full">
-    <h2 class="text-xl lg:text-2xl font-bold">RGBO STUDIO</h2>
+    <a href="#home" class="text-xl lg:text-2xl font-bold">RGBO STUDIO</a>
     <nav>
       <ul class="hidden md:flex gap-7">
         <!-- <li><a href="#home">Home</a></li> -->

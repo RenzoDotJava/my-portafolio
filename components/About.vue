@@ -13,7 +13,7 @@
             thinking</strong> to ensure the quality of the final product.
         </p>
         <p class="mt-5 md:mt-7">
-          Besides, my main idiom is <strong>spanish</strong>, but I can communicate in <strong>english</strong>.
+          Also, I can communicate in <strong>spanish (native)</strong> and <strong>english (professional)</strong>.
         </p>
         <p class="mt-5 md:mt-7">
           These are few of the technologies I working with:
@@ -27,10 +27,8 @@
           <li class="list-disc">Stencil.js</li>
         </ul>
       </div>
-      <!-- <img class="object-contain aspect-[1.3] sm:aspect-[2] md:col-span-2 md:aspect-[1.15] md:self-center"
-        src="../assets/profile_photo.png" alt="Profile Photo"> -->
-      <img class="object-contain aspect-[1.3] sm:aspect-[2] md:col-span-2 md:aspect-[1.15] md:self-center"
-        src="https://pub-1e45773301c547a7829dc62e2ecab4c8.r2.dev/profile_photo.png" alt="Profile Photo">
+      <img class="object-contain md:col-span-2 aspect-[1.3] sm:aspect-[1.5] md:aspect-[1] lg:aspect-[1.2] md:self-center"
+        src="/profile_photo.png" alt="Profile Photo">
     </div>
   </section>
 </template>
