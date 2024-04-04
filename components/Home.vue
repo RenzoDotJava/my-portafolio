@@ -1,6 +1,6 @@
 <script setup>
 const icons = [
-  'mdi:github',
+  'ph:github-logo',
   'mdi:linkedin'
 ]
 //https://v4.brittanychiang.com/
