@@ -18,23 +18,41 @@ button::selection,
 label::selection,
 a::selection,
 img::selection {
-  background-color: red;
+  background-color: rgb(185 28 28);
 }
 
 header {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header.translate {
+  transform: translateY(-100%);
+}
+
+aside.close {
+  transform: translateX(-100%);
+}
+
+aside.open {
+  transform: translateX(0);
 }
 
 svg.active {
   transform: rotate(180deg);
 }
 
-/* div.accordion {
-  overflow: hidden;
-  max-height: 0px;
-  transition: max-height 0.5s cubic-bezier(.2, 0, .3, 1);
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-div.accordion.active {
-  max-height: 1000px;
-} */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

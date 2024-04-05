@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="flex flex-col py-14 xl:py-28 xl:mx-16 2xl:mx-32">
+  <section id="about" class="flex flex-col py-24 xl:py-28 xl:mx-16 2xl:mx-32">
     <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center">About me</h1>
     <div class="flex flex-col md:grid md:grid-cols-5 gap-10 mt-8 md:mt-12 xl:mt-16">
       <div class="text-md md:text-lg md:col-span-3">
