@@ -1,22 +1,6 @@
 <script setup>
-const items = [
-  {
-    title: 'About',
-    link: '#about',
-  },
-  {
-    title: 'Work',
-    link: '#work',
-  },
-  {
-    title: 'Projects',
-    link: '#projects',
-  },
-  {
-    title: 'Contact',
-    link: '#contact',
-  },
-];
+import { icons, items } from '~/utils/constants';
+
 const lastY = ref(0);
 const header = ref(null);
 const isOpen = ref(false);
@@ -56,7 +40,7 @@ onUnmounted(() => {
     <div>
       <ul class="hidden md:flex gap-7">
         <li v-for="(item, index) in items" :key="index">
-          <a :href="item.link">{{ item.title }}</a>
+          <a class="text-xl header-link" :href="item.link">{{ item.title }}</a>
         </li>
       </ul>
       <div class="md:hidden">
@@ -66,15 +50,28 @@ onUnmounted(() => {
   </header>
   <aside :class="['fixed bg-black w-screen h-screen px-7 md:hidden', `${isOpen ? 'open' : 'close'}`]">
     <div class="flex justify-between items-center h-[80px]">
-      <a href="#home" class="text-white text-xl lg:text-2xl font-bold" @click="toogleMenu">RGBO STUDIO</a>
+      <a href="#home" class="text-white text-xl font-bold" @click="toogleMenu">RGBO STUDIO</a>
       <Icon class="h-8 w-8 text-white" name="material-symbols:close" @click="toogleMenu" />
     </div>
-    <div class="px-10 mt-12">
+    <div class="px-14 h-[calc(100vh-80px)] flex flex-col justify-around">
       <ul class="flex flex-col gap-8">
-        <li v-for="(item, index) in items" :key="index">
-          <a :href="item.link" class="text-white text-2xl font-extralight" @click="toogleMenu">{{ item.title }}</a>
+        <li v-for="(item, index) in items" :key="index" class="w-fit">
+          <a :href="item.link" class="text-2xl font-light mobile-link" @click="toogleMenu">
+            {{ item.title }}
+          </a>
         </li>
       </ul>
+      <button type="button" class="border focus:outline-none w-fit text-white px-10 py-2 font-light text-lg">My
+        Resume</button>
+      <div class="flex flex-col gap-7">
+        <a href="mailto:contact@rgbo.me" class="text-white text-xl font-light mobile-link w-fit">contact@rgbo.me</a>
+        <div class="flex gap-10">
+          <a v-for="icon in icons" :href="icon.link" target="_blank" rel="noopener noreferrer">
+            <Icon :name="icon.name" class="h-8 w-8 text-white" />
+          </a>
+        </div>
+      </div>
     </div>
+
   </aside>
 </template>

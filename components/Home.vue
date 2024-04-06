@@ -1,14 +1,5 @@
 <script setup lang="ts">
-const icons = [
-  {
-    name: 'ph:github-logo',
-    link: 'https://github.com/RenzoDotJava'
-  },
-  {
-    name: 'mdi:linkedin',
-    link: 'https://www.linkedin.com/in/renzobedrinana/'
-  }
-]
+import { icons } from '~/utils/constants';
 //https://v4.brittanychiang.com/
 //https://olaolu.dev/
 </script>

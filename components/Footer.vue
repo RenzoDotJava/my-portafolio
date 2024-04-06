@@ -1,14 +1,5 @@
 <script setup>
-const icons = [
-  {
-    name: 'ph:github-logo',
-    link: 'https://github.com/RenzoDotJava'
-  },
-  {
-    name: 'mdi:linkedin',
-    link: 'https://www.linkedin.com/in/renzobedrinana/'
-  }
-]
+import { icons } from '~/utils/constants';
 </script>
 
 <template>
