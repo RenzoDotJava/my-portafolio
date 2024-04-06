@@ -41,7 +41,7 @@ const projects = [
 ]
 </script>
 <template>
-  <section id="projects" class="flex flex-col py-24 xl:py-28 sm:mx-4 md:mx-8 xl:mx-16 2xl:mx-36">
+  <section id="projects" class="flex flex-col py-10 xl:py-28 sm:mx-4 md:mx-8 xl:mx-16 2xl:mx-36">
     <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center">Some stuff I've built</h1>
     <div class="flex flex-col gap-12 md:gap-16 xl:gap-20 mt-12 md:mt-16 xl:mt-20">
       <div v-for="(project, index) in projects" :key="index"

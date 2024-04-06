@@ -49,7 +49,7 @@ function setActive(index: number) {
 }
 </script>
 <template>
-  <section id="work" class="flex flex-col py-24 xl:py-28 xl:mx-32">
+  <section id="work" class="flex flex-col py-10 xl:py-28 xl:mx-32">
     <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center">Companies I've worked at</h1>
     <div class="flex flex-col mt-8 md:mt-12 xl:mt-16 sm:px-14 md:px-20 lg:px-36 xl:px-24 2xl:px-44">
       <div v-for="(job, index) in jobs" :key="index" class="flex flex-col border-b-2 ">
