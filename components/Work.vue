@@ -6,8 +6,8 @@ const jobs = [
     startDate: 'July 2023',
     endDate: 'Present',
     milestones: [
-      'Build a high-quality design system for Cementos Pacasmayo that covers different digital products (PacasPro, Ayu, Isicom, Cantera and Digou)',
-      'Develop 25 responsive web components with Angular, Stencil.js, SCSS and design tokens, while working hand-in-hand with designers to guarantee the correct implementation of each component',
+      'Built a high-quality design system for Cementos Pacasmayo that covers different digital products (PacasPro, Ayu, Isicom, Cantera and Digou)',
+      'Developed 25 responsive web components with Angular, Stencil.js, SCSS and design tokens, while working hand-in-hand with designers to guarantee the correct implementation of each component',
       'Set up 2 pipelines to automate the upload of 3 different packages (design-tokens, stencil-library, angular-components) using Azure Devops',
       'Built a custom Storybook to showcase the components and their different variants, which helped the stakeholders to have a better understanding of the components and their usage'
     ],
@@ -20,9 +20,10 @@ const jobs = [
     endDate: 'Jun 2023',
     milestones: [
       'Worked on a migration from an Angular system to a React Native app called Runner App built with Expo and published on the Play Store and App Store',
-      'Built a push notification microservice using Firebase Cloud Messaging',
+      'Built a push notification microservice using Kotlin and Firebase Cloud Messaging',
       'Reworked of auth0-inspired authentication service in order to centralize the login for all the projects and let the customers to enter the system with Google and Apple accounts',
-      'Maintained 5 different enterprise projects, which were developed with React, Next.js and Angular',
+      'Developed an enterprise system with Next.js to enable the approval of Wargos by the Ministry of Peru, which allowed it to increase its client portfolio',
+      'Maintained 5 different enterprise projects, which were developed with React and Angular',
     ],
     link: 'https://wgt.pe/'
   },

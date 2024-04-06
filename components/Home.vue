@@ -1,9 +1,16 @@
-<script setup>
+<script setup lang="ts">
 const icons = [
-  'ph:github-logo',
-  'mdi:linkedin'
+  {
+    name: 'ph:github-logo',
+    link: 'https://github.com/RenzoDotJava'
+  },
+  {
+    name: 'mdi:linkedin',
+    link: 'https://www.linkedin.com/in/renzobedrinana/'
+  }
 ]
 //https://v4.brittanychiang.com/
+//https://olaolu.dev/
 </script>
 
 <template>
@@ -18,7 +25,9 @@ const icons = [
       <p class="mt-2 md:mt-3 text-md md:text-lg">Contact me at <strong>contact@rgbo.me</strong></p>
     </div>
     <div class="flex gap-5 md:gap-8">
-      <Icon v-for="icon in icons" class="h-8 w-8 cursor-pointer hover:text-red-700" :name="icon" />
+      <a v-for="icon in icons" :href="icon.link" target="_blank" rel="noopener noreferrer">
+        <Icon :name="icon.name" class="h-8 w-8 hover:text-red-700" />
+      </a>
     </div>
     <button type="button"
       class="border focus:outline-none w-fit focus:bg-gray-100 hover:bg-gray-100 active:bg-gray-200 px-10 py-2 font-semibold text-lg mt-2 md:mt-4">My
