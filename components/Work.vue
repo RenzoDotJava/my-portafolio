@@ -6,10 +6,10 @@ const jobs = [
     startDate: 'July 2023',
     endDate: 'Present',
     milestones: [
-      'Built a high-quality design system for Cementos Pacasmayo that covers different digital products (PacasPro, Ayu, Isicom, Cantera and Digou)',
-      'Developed 25 responsive web components with Angular, Stencil.js, SCSS and design tokens, while working hand-in-hand with designers to guarantee the correct implementation of each component',
+      'Built a high-quality design system for Cementos Pacasmayo that covers different digital products (PacasPro, Ayu, Isicom, Cantera and Digou).',
+      'Developed 25 responsive web components with Angular, Stencil.js, SCSS and design tokens, while working hand-in-hand with designers to guarantee the correct implementation of each component.',
       'Set up 2 pipelines to automate the upload of 3 different packages (design-tokens, stencil-library, angular-components) using Azure Devops',
-      'Built a custom Storybook to showcase the components and their different variants, which helped the stakeholders to have a better understanding of the components and their usage'
+      'Built a custom Storybook to showcase the components and their different variants, which helped the stakeholders to have a better understanding of the components and their usage.'
     ],
     link: 'https://multiplica.com/'
   },
@@ -19,11 +19,11 @@ const jobs = [
     startDate: 'Jan 2022',
     endDate: 'Jun 2023',
     milestones: [
-      'Worked on a migration from an Angular system to a React Native app called Runner App built with Expo and published on the Play Store and App Store',
-      'Built a push notification microservice using Kotlin and Firebase Cloud Messaging',
-      'Reworked of auth0-inspired authentication service in order to centralize the login for all the projects and let the customers to enter the system with Google and Apple accounts',
-      'Developed an enterprise system with Next.js to enable the approval of Wargos by the Ministry of Peru, which allowed it to increase its client portfolio',
-      'Maintained 5 different enterprise projects, which were developed with React and Angular',
+      'Worked on a migration from an Angular system to a React Native app called Runner App built with Expo and published on the Play Store.',
+      'Built a push notification microservice using Kotlin and Firebase Cloud Messaging.',
+      'Reworked of auth0-inspired authentication microservice in order to centralize the login for all the projects and let the customers to enter the system with Google and Apple accounts.',
+      'Developed an enterprise system with Next.js to enable the approval of Wargos by the Ministry of Peru, which allowed it to increase its client portfolio.',
+      'Maintained 5 different enterprise projects, which were developed with React and Angular.',
     ],
     link: 'https://wgt.pe/'
   },
@@ -33,9 +33,9 @@ const jobs = [
     startDate: 'July 2021',
     endDate: 'Dec 2021',
     milestones: [
-      'Maintained a billing enterprise system for G4S Peru, which was developed with JQuery, JavaScript and Django',
-      'Built a course manager web for the Peruvian Society of Hematology, which was developed with Angular and Java Spring Boot',
-      'Implemented endpoints and stored prodecures to improve server efficiency and reduce the response time of the different systems',
+      'Maintained a billing enterprise system for G4S Peru, which was developed with JQuery, JavaScript and Django.',
+      'Built a course manager web for the Peruvian Society of Hematology, which was developed with Angular and Java Spring Boot.',
+      'Implemented endpoints and stored prodecures to improve server efficiency and reduce the response time of the different systems.',
     ],
     link: 'https://mvcpartners.pe/'
   }
@@ -52,8 +52,9 @@ function setActive(index: number) {
   <section id="work" class="flex flex-col py-10 xl:py-28 xl:mx-32">
     <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center">Companies I've worked at</h1>
     <div class="flex flex-col mt-8 md:mt-12 xl:mt-16 sm:px-14 md:px-20 lg:px-36 xl:px-24 2xl:px-44">
-      <div v-for="(job, index) in jobs" :key="index" class="flex flex-col border-b-2 ">
-        <div class="flex justify-between cursor-pointer py-5" @click="() => setActive(index)">
+      <div v-for="(job, index) in jobs" :key="index" class="flex flex-col border-b-2 cursor-pointer"
+        @click="() => setActive(index)">
+        <div class="flex justify-between py-5">
           <div class="flex flex-col gap-1">
             <div class="flex gap-1 sm:gap-2">
               <h2 class="text-lg md:text-xl font-medium">{{ job.position }}</h2>

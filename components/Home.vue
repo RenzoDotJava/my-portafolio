@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { icons } from '~/utils/constants';
-//https://v4.brittanychiang.com/
-//https://olaolu.dev/
 </script>
 
 <template>
@@ -20,8 +18,10 @@ import { icons } from '~/utils/constants';
         <Icon :name="icon.name" class="h-8 w-8 hover:text-red-700" />
       </a>
     </div>
-    <button type="button"
-      class="border focus:outline-none w-fit focus:bg-gray-100 hover:bg-gray-100 active:bg-gray-200 px-10 py-2 font-semibold text-lg mt-2 md:mt-4">My
-      Resume</button>
+    <a href="https://pub-1e45773301c547a7829dc62e2ecab4c8.r2.dev/EN%20CV%20Renzo%20Bedrinana.pdf" target="_blank"
+      rel="noopener noreferrer"
+      class="border focus:outline-none w-fit focus:bg-gray-100 hover:bg-gray-100 active:bg-gray-200 px-10 py-2 font-semibold text-lg mt-2 md:mt-4">
+      My Resume
+    </a>
   </section>
 </template>

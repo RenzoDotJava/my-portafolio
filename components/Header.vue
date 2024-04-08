@@ -61,8 +61,10 @@ onUnmounted(() => {
           </a>
         </li>
       </ul>
-      <button type="button" class="border focus:outline-none w-fit text-white px-10 py-2 font-light text-lg">My
-        Resume</button>
+      <a href="https://pub-1e45773301c547a7829dc62e2ecab4c8.r2.dev/EN%20CV%20Renzo%20Bedrinana.pdf" target="_blank"
+        rel="noopener noreferrer" class="border focus:outline-none w-fit text-white px-10 py-2 font-light text-lg">
+        My Resume
+      </a>
       <div class="flex flex-col gap-7">
         <a href="mailto:contact@rgbo.me" class="text-white text-xl font-light mobile-link w-fit">contact@rgbo.me</a>
         <div class="flex gap-10">
