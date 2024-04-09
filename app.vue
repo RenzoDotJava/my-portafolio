@@ -1,6 +1,12 @@
 <script setup lang="ts">
+/* const { setLocale } = useI18n();
+
+onBeforeMount(() => {
+  setLocale(sessionStorage.getItem('rgbo-locale') || 'en');
+}); */
+
 useHead({
-  htmlAttrs: { lang: 'en_US' },
+  htmlAttrs: { lang: 'en' },
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
   ],
@@ -20,6 +26,7 @@ useSeoMeta({
   twitterImage: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJvbnQlMjBlbmQlMjBkZXZlbG9wZXJ8ZW58MHx8MHx8fDA%3D',
   twitterDescription: 'Specialized in developing websites, mobile apps, and design systems.',
 })
+//TODO: Create a loader
 </script>
 
 <template>

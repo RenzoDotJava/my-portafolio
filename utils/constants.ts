@@ -11,19 +11,19 @@ const icons = [
 
 const items = [
   {
-    title: 'About',
+    title: 'about',
     link: '#about',
   },
   {
-    title: 'Work',
+    title: 'work',
     link: '#work',
   },
   {
-    title: 'Projects',
+    title: 'projects',
     link: '#projects',
   },
   {
-    title: 'Contact',
+    title: 'contact',
     link: '#contact',
   },
 ];

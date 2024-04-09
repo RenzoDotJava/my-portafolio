@@ -1,0 +1,80 @@
+{
+  "header": {
+    "about": "About",
+    "work": "Work",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Hi! I'm {name}.",
+    "subtitle": "A frontend developer",
+    "slogan": {
+      "part1": "If you are looking for someone specialized in developing",
+      "part2": "mobile apps",
+      "part3": "and",
+      "part4": "design systems",
+      "part5": "you are in the right place",
+      "part6": "Contact me at"
+    },
+    "resume": "My Resume"
+  },
+  "about": {
+    "title": "About me",
+    "description": {
+      "part1": "Greetings from Peru! I'm Renzo Bedriñana and my passion is bringing incredible ideas to life. I'm a",
+      "part2": "Computer Engineer",
+      "part3": "involved in",
+      "part4": "Software Development",
+      "part5": "world. Currently, I'm working as a",
+      "part6": "Frontend Developer",
+      "part7": "at",
+      "part8": "As an enginner, I recognize the importance of",
+      "part9": "good communication",
+      "part10": "and",
+      "part11": "critical thinking",
+      "part12": "to ensure the quality of the final product",
+      "part13": "Also, I can communicate in",
+      "part14": "spanish (native)",
+      "part15": "and",
+      "part16": "english (professional)",
+      "part17": "These are few of the technologies I working with"
+    }
+  },
+  "work": {
+    "title": "Companies I've worked at",
+    "jobs": {
+      "job1": {
+        "startDate": "July 2023",
+        "endDate": "Present"
+      },
+      "job2": {
+        "startDate": "Jan 2022",
+        "endDate": "Jun 2023"
+      },
+      "job3": {
+        "startDate": "July 2022",
+        "endDate": "Dec 2021"
+      }
+    }
+  },
+  "projects": {
+    "title": "Some stuff I've built",
+    "projects": {
+      "project1": {
+        "subtitle": "Wargos Tec Project"
+      },
+      "project2": {
+        "subtitle": "Personal Project"
+      },
+      "project3": {
+        "subtitle": "MVC Partners Project"
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's talk!",
+    "description": "If you have any questions, need help with a project, or just want to say hi, feel free to email me! I would love to hear from you and your ideas. I will try to answer you as quickly as possible.",
+    "link": "Contact me"
+  },
+  "footer": "Built with Nuxt 3 by Renzo Bedriñana"
+}

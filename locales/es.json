@@ -1,0 +1,80 @@
+{
+  "header": {
+    "about": "Sobre mí",
+    "work": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Hola! Soy {name}.",
+    "subtitle": "Un desarrollador frontend",
+    "slogan": {
+      "part1": "Si estás buscando alguien especializado en desarrollar",
+      "part2": "aplicaciones móviles",
+      "part3": "y",
+      "part4": "sistemas de diseño",
+      "part5": "estás en el lugar correcto",
+      "part6": "Contáctame en"
+    },
+    "resume": "Mi CV"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": {
+      "part1": "Saludos desde Perú! Me llamo Renzo Bedriñana y mi pasión es darle vida a ideas increíbles. Soy un",
+      "part2": "Ingeniero de Informático",
+      "part3": "enfocado en el",
+      "part4": "Desarrollo de Software",
+      "part5": "Actualmente, estoy trabajando como",
+      "part6": "Desarrollador Frontend",
+      "part7": "en",
+      "part8": "Como ingeniero, reconozco la importancia del",
+      "part9": "trabajo en equipo",
+      "part10": "y",
+      "part11": "pensamiento crítico",
+      "part12": "para asegurar la calidad del producto final",
+      "part13": "Asimismo, me puedo comunicar en",
+      "part14": "español (nativo)",
+      "part15": "y",
+      "part16": "inglés (profesional)",
+      "part17": "Estas son algunas de las tecnologias con las que trabajo"
+    }
+  },
+  "work": {
+    "title": "Empresas en las que trabajé",
+    "jobs": {
+      "job1": {
+        "startDate": "Jul 2023",
+        "endDate": "Actualidad"
+      },
+      "job2": {
+        "startDate": "Ene 2022",
+        "endDate": "Jun 2023"
+      },
+      "job3": {
+        "startDate": "Jul 2022",
+        "endDate": "Dic 2021"
+      }
+    }
+  },
+  "projects": {
+    "title": "Algunos proyectos que desarrollé",
+    "projects": {
+      "project1": {
+        "subtitle": "Proyecto de Wargos Tec"
+      },
+      "project2": {
+        "subtitle": "Proyecto Personal"
+      },
+      "project3": {
+        "subtitle": "Proyecto de MVC Partners"
+      }
+    }
+  },
+  "contact": {
+    "title": "Vamos a hablar!",
+    "description": "Si tienes alguna pregunta, necesitas ayuda con un proyecto o simplemente quieres saludar, ¡no dudes en enviarme un correo! me encantaría saber de ti y de tus ideas. Intentaré responderte lo más rápido posible.",
+    "link": "Contáctame"
+  },
+  "footer": "Desarrollado con Nuxt 3 por Renzo Bedriñana"
+}

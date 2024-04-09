@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/i18n": "^8.3.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "autoprefixer": "^10.4.18",
     "nuxt-icon": "^0.6.9",

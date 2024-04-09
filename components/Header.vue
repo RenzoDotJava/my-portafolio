@@ -1,6 +1,8 @@
 <script setup>
 import { icons, items } from '~/utils/constants';
 
+const { setLocale } = useI18n();
+
 const lastY = ref(0);
 const header = ref(null);
 const isOpen = ref(false);
@@ -24,6 +26,16 @@ const handleScroll = () => {
   lastY.value = window.scrollY;
 };
 
+const handleChangeLocale = (locale, mobile = false) => {
+  /* const sessionLocale = sessionStorage.getItem('rgbo-locale') | 'en';
+  if (sessionLocale !== locale) {
+    sessionStorage.setItem('rgbo-locale', locale);
+    setLocale(locale);
+  } */
+  setLocale(locale);
+  mobile && toogleMenu();
+};
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
 });
@@ -35,14 +47,20 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <header ref="header" class="flex justify-between items-center h-[80px] px-7 md:px-9 lg:px-12 w-full fixed bg-white">
+  <header ref="header"
+    class="flex justify-between items-center h-[80px] px-7 md:px-9 lg:px-12 w-full fixed bg-white shadow-[rgba(0,0,15,0.035)_2px_3px_5px_0px]">
     <a href="#home" class="text-xl lg:text-2xl font-bold">RGBO STUDIO</a>
-    <div>
+    <div class="flex gap-4 items-center">
       <ul class="hidden md:flex gap-7">
         <li v-for="(item, index) in items" :key="index">
-          <a class="text-xl header-link" :href="item.link">{{ item.title }}</a>
+          <a class="text-lg lg:text-xl header-link" :href="item.link">{{ $t(`header.${item.title}`) }}</a>
         </li>
       </ul>
+      <span class="hidden md:block font-semibold">|</span>
+      <div class="hidden md:flex gap-4">
+        <button class="text-lg lg:text-xl" @click="handleChangeLocale('en')">EN</button>
+        <button class="text-lg lg:text-xl" @click="handleChangeLocale('es')">ES</button>
+      </div>
       <div class="md:hidden">
         <Icon class="h-8 w-8" name="material-symbols:menu" color="black" @click="toogleMenu" />
       </div>
@@ -53,11 +71,11 @@ onUnmounted(() => {
       <a href="#home" class="text-white text-xl font-bold" @click="toogleMenu">RGBO STUDIO</a>
       <Icon class="h-8 w-8 text-white" name="material-symbols:close" @click="toogleMenu" />
     </div>
-    <div class="px-14 h-[calc(100vh-80px)] flex flex-col justify-around">
+    <div class="px-14 sm:px-20 h-[calc(100vh-80px)] flex flex-col justify-around">
       <ul class="flex flex-col gap-8">
         <li v-for="(item, index) in items" :key="index" class="w-fit">
           <a :href="item.link" class="text-2xl font-light mobile-link" @click="toogleMenu">
-            {{ item.title }}
+            {{ $t(`header.${item.title}`) }}
           </a>
         </li>
       </ul>
@@ -72,6 +90,10 @@ onUnmounted(() => {
             <Icon :name="icon.name" class="h-8 w-8 text-white" />
           </a>
         </div>
+      </div>
+      <div class="flex gap-6">
+        <button class="text-white text-xl" @click="handleChangeLocale('en', true)">EN</button>
+        <button class="text-white text-xl" @click="handleChangeLocale('es', true)">ES</button>
       </div>
     </div>
 
