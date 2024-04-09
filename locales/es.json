@@ -3,7 +3,8 @@
     "about": "Sobre mí",
     "work": "Experiencia",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "development": "Sitio web en desarrollo"
   },
   "home": {
     "title": "Hola! Soy {name}.",

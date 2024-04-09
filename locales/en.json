@@ -3,7 +3,8 @@
     "about": "About",
     "work": "Work",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "development": "Website under development"
   },
   "home": {
     "title": "Hi! I'm {name}.",

@@ -47,7 +47,31 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <header ref="header"
+  <header ref="header" class="w-full fixed">
+    <div class="bg-yellow-500 py-2 flex items-center justify-center">
+      <span class="text-lg text-white font-bold">{{ $t('header.development') }}</span>
+    </div>
+    <div class="flex justify-between items-center h-[80px] px-7 md:px-9 lg:px-12  bg-white shadow-[rgba(0,0,15,0.035)_2px_3px_5px_0px]">
+      <a href="#home" class="text-xl lg:text-2xl font-bold">RGBO STUDIO</a>
+      <div class="flex gap-4 items-center">
+        <ul class="hidden md:flex gap-7">
+          <li v-for="(item, index) in items" :key="index">
+            <a class="text-lg lg:text-xl header-link" :href="item.link">{{ $t(`header.${item.title}`) }}</a>
+          </li>
+        </ul>
+        <span class="hidden md:block font-semibold">|</span>
+        <div class="hidden md:flex gap-4">
+          <button class="text-lg lg:text-xl" @click="handleChangeLocale('en')">EN</button>
+          <button class="text-lg lg:text-xl" @click="handleChangeLocale('es')">ES</button>
+        </div>
+        <div class="md:hidden">
+          <Icon class="h-8 w-8" name="material-symbols:menu" color="black" @click="toogleMenu" />
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- <header ref="header"
     class="flex justify-between items-center h-[80px] px-7 md:px-9 lg:px-12 w-full fixed bg-white shadow-[rgba(0,0,15,0.035)_2px_3px_5px_0px]">
     <a href="#home" class="text-xl lg:text-2xl font-bold">RGBO STUDIO</a>
     <div class="flex gap-4 items-center">
@@ -65,7 +89,7 @@ onUnmounted(() => {
         <Icon class="h-8 w-8" name="material-symbols:menu" color="black" @click="toogleMenu" />
       </div>
     </div>
-  </header>
+  </header> -->
   <aside :class="['fixed bg-black w-screen h-screen px-7 md:hidden', `${isOpen ? 'open' : 'close'}`]">
     <div class="flex justify-between items-center h-[80px]">
       <a href="#home" class="text-white text-xl font-bold" @click="toogleMenu">RGBO STUDIO</a>
