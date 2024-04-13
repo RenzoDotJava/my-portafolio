@@ -1,7 +1,7 @@
 <script setup>
 import { icons, items } from '~/utils/constants';
 
-const { setLocale } = useI18n();
+const { locale, setLocale } = useI18n();
 
 const lastY = ref(0);
 const header = ref(null);
@@ -51,7 +51,8 @@ onUnmounted(() => {
     <div class="bg-yellow-500 py-2 flex items-center justify-center">
       <span class="text-lg text-white font-bold">{{ $t('header.development') }}</span>
     </div>
-    <div class="flex justify-between items-center h-[80px] px-7 md:px-9 lg:px-12  bg-white shadow-[rgba(0,0,15,0.035)_2px_3px_5px_0px]">
+    <div
+      class="flex justify-between items-center h-[80px] px-7 md:px-9 lg:px-12  bg-white shadow-[rgba(0,0,15,0.035)_2px_3px_5px_0px]">
       <a href="#home" class="text-xl lg:text-2xl font-bold">RGBO STUDIO</a>
       <div class="flex gap-4 items-center">
         <ul class="hidden md:flex gap-7">
@@ -103,8 +104,9 @@ onUnmounted(() => {
           </a>
         </li>
       </ul>
-      <a :href="locale === 'en' ? 'https://pub-1e45773301c547a7829dc62e2ecab4c8.r2.dev/EN%20CV%20Renzo%20Bedrinana.pdf' : 'https://pub-1e45773301c547a7829dc62e2ecab4c8.r2.dev/ES%20CV%20Renzo%20Bedrinana.pdf'" target="_blank"
-        rel="noopener noreferrer" class="border focus:outline-none w-fit text-white px-10 py-2 font-light text-lg">
+      <a :href="locale === 'en' ? 'https://pub-1e45773301c547a7829dc62e2ecab4c8.r2.dev/EN%20CV%20Renzo%20Bedrinana.pdf' : 'https://pub-1e45773301c547a7829dc62e2ecab4c8.r2.dev/ES%20CV%20Renzo%20Bedrinana.pdf'"
+        target="_blank" rel="noopener noreferrer"
+        class="border focus:outline-none w-fit text-white px-10 py-2 font-light text-lg">
         My Resume
       </a>
       <div class="flex flex-col gap-7">
