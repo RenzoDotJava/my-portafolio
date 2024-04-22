@@ -29,7 +29,7 @@ const projects = [
     src: '/pex_app_project.png',
     alt: 'pex_app',
     link: '',
-    github: 'https://github.com/RenzoDotJava?tab=repositories',
+    github: 'https://github.com/RenzoDotJava/pex-app',
     descriptions: [
       {
         en: 'A mobile app for tracking your personal expenses. Register your daily expenses and see a summary by day and month. Generate a custom report and export it as an excel file.',
