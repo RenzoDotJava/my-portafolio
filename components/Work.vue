@@ -62,7 +62,7 @@ const jobs = [
     id: 3,
     position: 'Web Developer',
     company: 'MVC Partners',
-    startDate: 'July 2021',
+    startDate: 'Jan 2021',
     endDate: 'Dec 2021',
     milestones: [
       {
